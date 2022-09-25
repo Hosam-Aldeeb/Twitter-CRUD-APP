@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      
+    />
+                    <ul class="todoItems">
+                    <% for(let i=0; i < items.length; i++) {%>
+                        <li class="item">
+                            <div class="post">
+                                <div class="post__avatar">
+                                  <img
+                                    src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
+                                    alt=""
+                                  />
+                                </div>
+                        
+                                <div class="post__body">
+                                  <div class="post__header">
+                                    <div class="post__headerText">
+                                      <h3>
+                                        Hosam Aldeeb
+                                        <span class="post__headerSpecial"
+                                          ><span class="material-icons post__badge"> verified </span>@Hosam-Aldeeb</span
+                                        >
+                                        <span>
+                                        
+                                        </span>
+                                      </h3>
+                                    </div>
+                                    <div class="post__headerDescription">
+                            <% if(items[i].completed === true) {%>
+                                <span class='completed'><%= items[i].thing %></span>
+                            <% }else{ %>
+                                <span><%= items[i].thing %></span>
+                            <% } %>    
+                            <span class='fa fa-trash'></span>
+                            <div class="post__footer">
+                                <span class="material-icons"> repeat </span>
+                                <span class="material-icons"> favorite_border </span>
+                                <span class="material-icons"> publish </span>
+                              </div>
+                        </li>
+                    <% } %>
+                    </ul>
+            </div>
+          </div>
+          
+          
+          
+      <!-- post ends -->
+
+</body>
+</html>
+
+<body>
+    <body>
+        <div class="wrapper">
+         <div class="input-box">
+             <div class="tweet-area">
+                <span class="placeholder">What's happening?</span>
+        <form action="/addTodo" method="POST">
+                 <input name="todoItem"class="editable" contenteditable="true" spellcheck="false"></input>
+                <div  class="input readonly" contenteditable="true" spellcheck="false"></div>
+              </div>
+              <div class="privacy">
+                <i class="fas fa-globe-asia"></i>
+                <span>Everyone can reply</span>
+              </div>
+            </div>
+            <div class="bottom">
+              <ul class="icons">
+                <li><i class="uil uil-capture"></i></li>
+                <li><i class="far fa-file-image"></i></li>
+                <li><i class="fas fa-map-marker-alt"></i></li>
+                <li><i class="far fa-grin"></i></li>
+                <li><i class="far fa-user"></i></li>
+              </ul>
+                <div class="content">
+                <span class="counter">100</span>
+                <button type="submit">Tweet</button>
+         </form>
+              </div>
+            </div>
+          </div>
+        <script src='js/main.js'></script>
+    </body>
+
+   
